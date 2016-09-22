@@ -1,0 +1,1 @@
+SELECT NameFROM Borrower AS BRWHERE NOT EXISTS	(	SELECT *	FROM Book_Loans AS BL	WHERE BR.CardNo = BL.CardNo	)
